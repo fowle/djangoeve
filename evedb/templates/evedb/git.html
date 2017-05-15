@@ -1,0 +1,26 @@
+{% extends "evedb/base.html" %}
+{% block lng %}ru{% endblock lng %}
+{% block description %}Основные команды для работы с Git{% endblock description %}
+{% block title %}EVE DB - Git{% endblock title %}
+{% block content %}
+      <div class="git-template">
+        <h1>Работа с Git и полезные материалы</h1>
+		Тут будем хранить список всего того, что может пригодиться в работе на EVE DB.
+		<h2>Команды Git</h2>
+        <ul>
+			<li><b>git log</b> - лог действий</li>
+			<li><b>git status</b> - проверка текущего статуса проекта</li>
+			<li><b>git add --all</b> - подготовка всех изменений к отправке</li>
+			<li><b>git commit -m "комментарий"</b> - фиксирование сделанных изменений</li>
+			<li><b>git push origin</b> - отправка фиксированных изменений в репозиторий</li>
+			<li><b>git pull origin</b> - получений изменений из репозитория</li>
+		</ul>
+		Репозиторий на GitHub - https://github.com/fowle/djangoeve.git
+		<h2>Полезные ссылки</h2>
+		<ul>
+			<li><a href="http://eax.me/git-commands/">Шпаргалка по Git</a></li>
+			<li><a href="https://tutorial.djangogirls.org/ru/">Руководство по Django</a></li>
+			<li><a href="http://eax.me/python-virtualenv/">Памятка по virtualenv</a></li>
+		</ul>
+      </div>
+{% endblock content %}
