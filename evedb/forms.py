@@ -8,7 +8,4 @@ class TokenForm(forms.ModelForm):
 		labels = {'token': ''}
 		
 class GetImageForm(forms.ModelForm):
-	class Meta:
-		image_id = forms.CharField(max_length=100)
-		fields = ['image_id']
-		labels = {'image_id': ''}		
+	image_id = forms.CharField(max_length=100)		
