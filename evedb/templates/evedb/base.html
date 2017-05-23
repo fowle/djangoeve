@@ -28,7 +28,7 @@
 		{% if user.is_authenticated %}
 			<a class="login-link" href="/logout/">Выйти</a>
 		{% else %}
-			<a class="login-link" href="/login/">Войти</a>
+			<a class="login-link" href="{% url 'evedb:login' %}">Войти</a>
 		{% endif %}
       </div>	
     <nav class="navbar navbar-default">
@@ -48,6 +48,7 @@
 			<li><a href="#">Предметы</a></li>
 			<li><a href="#">Чертежи</a></li>
 			<li><a href="/git/">Git</a></li>
+			<li><a href="/ss/">ShutterStock</a></li>
           </ul>
         </div>
       </div>

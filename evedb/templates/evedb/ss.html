@@ -1,0 +1,16 @@
+{% extends "evedb/base.html" %}
+{% block lng %}ru{% endblock lng %}
+{% block description %}Скачивание изображений с сайта ShutterStock{% endblock description %}
+{% block title %}ShutterStock - EVE DB{% endblock title %}
+{% block content %}
+      <div class="common-left-template">
+        <p>Новый токен:</p>
+		<form method="post" action="{% url 'evedb:ss' %}">
+			{% csrf_token %}
+			<label for="placeholder" class="sr-only">ИД картинки</label>
+			<input type="text" name="image_id" placeholder="ИД картинки" required autofocus>
+			<button name="submit">Скачать</button>
+		</form>
+		<a href="{% url 'evedb:new_token' %}">Добавить токен</a>
+      </div>
+{% endblock content %}
